@@ -4,9 +4,10 @@ import Row from './Row';
 import request from './request';
 
 
+
 function App() {
   return (
-   <div className="App.css">
+   <div className="App">
       <h1>Sup Broo</h1>
 
    <Row title="DogaTime Originals" fetchUrl={request.fetchNetflixOriginals}></Row>
