@@ -1,0 +1,68 @@
+.Banner {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  min-height: 750px;
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  position: relative; //Used to position the fadeBottom absolute to the bottom
+
+  .Banner__contents {
+    padding: 1em 2em;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 2px;
+    margin: 0 2em;
+   
+
+    .Banner__title {
+      font-size: 3rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .Banner__buttons {
+      padding: 1.5em 0;
+
+      .Banner__button {
+        cursor: pointer;
+        color: #fff;
+        outline: none;
+        border: none;
+        font-weight: 700;
+        border-radius: 2px;
+        padding: 0.5em 2em;
+        margin-right: 1em;
+        background: rgba(219, 219, 219, 0.5);
+        transition: 0.4s;
+
+        &:hover {
+          background: rgb(63, 63, 63);
+        }
+      }
+    }
+
+    .Banner__description {
+      margin: 0;
+      max-width: 55rem;
+      max-height:50rem;
+      line-height: 1.8;
+      font-size: 1.2rem;
+      padding: 0;
+      
+    }
+  }
+
+  .Banner__fadeBottom {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
+  }
+}
