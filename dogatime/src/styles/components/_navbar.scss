@@ -1,0 +1,24 @@
+.Navbar {
+  position: fixed; //This will break justify-content
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; //Must add this to fix justify-content
+  padding: 1.5em;
+  background: transparent;
+  z-index: 1;
+  transition: 0.4s;
+
+  .Navbar__logo {
+    height: 30px;
+  }
+
+  .Navbar__avatar {
+    height: 30px;
+  }
+}
+
+.Navbar__black {
+  background: #111;
+}
