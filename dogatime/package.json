@@ -1,5 +1,6 @@
 {
   "name": "netflix_clone",
+  "homepage":"https://ho-mies.live",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
